@@ -36,6 +36,27 @@ customjs:
             <a onclick="yahoo()" title="Send mail to Metrowood">metrowood2@yahoo.com</a>
         </td>
     </tr>
+    <tr class="contact_row">
+        <td class="logo">
+            <table class="logo_name">
+                <tr>
+                    <td>
+                        <a href="tel:+919447057854" title="Call MD, Metrowood">
+                            <img src="/assets/call.png" alt="Mail" width="45px">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>MD</b></td>
+                </tr>
+            </table>
+        </td>
+        <td class="contact_table_details">
+            <a href="tel:+919447057854" title="Call MD, Metrowood">+91 9447057854 &emsp;</a>
+            <!-- <img width=25px src="../assets/whatsapp.png"></img> -->
+        </td>
+    </tr>
 </table>
-
 </center>
+
+###Leave us a message

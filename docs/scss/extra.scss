@@ -12,6 +12,54 @@ $button-color: rgb(11, 211, 191);
     }
 }
 
+//Home page
+#home_services{
+    font-size: 1.2em;
+    display: block;
+    td{
+        display: inline-block;
+    }
+}
+
+// Contact Us page
+.contact_us_space{
+    display: none;
+}
+
+// Contact Us page
+#contact_table{
+    .contact_row{
+        .logo{
+            .logo_name{
+                border: hidden;
+                border-collapse: collapse;
+                tr{
+                    td{
+                        text-align: center;
+                        padding: 0;
+                        a{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .contact_table_details{
+            padding-top: 8%;
+            font-size: 1.2em;
+            word-break: initial;
+            a{
+                text-decoration: none;
+                color: darkgreen;
+                cursor: pointer;
+            }
+            a:hover{
+                color: blue;
+            }
+        }
+    }
+}
+
 // Only use dark mode on screens
 @media screen {
     // Slate theme, i.e. dark mode
@@ -24,15 +72,49 @@ $button-color: rgb(11, 211, 191);
                 color: skyblue;
             }
         }
-    }
-}
 
-// When width is more than 600px
-@media screen and (min-width: 600px){
+        #contact_table{
+            .contact_table_details{
+                a{
+                    color: lightgreen;
+                }
+                a:hover{
+                    color: skyblue;
+                }
+            }
+        }
+
+    }
 }
 
 // When width is more than 700px
 @media screen and (min-width: 700px){
+    .contact_us_space{
+        display: initial;
+    }
+    #contact_table{
+        width: 600px;
+        .contact_row{
+            .logo{
+                padding-left: 40px;
+            }
+            .contact_table_details{
+                width: 75%;
+                padding-left: 80px;
+                padding-top: 4%;
+            }
+        }
+    }
+}
+
+// When width is more than 900px
+@media screen and (min-width: 900px){
+    #home_services{
+        td{
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+    }
 }
 
 // When width is more than 1219px -> Nav bar change initiated
